@@ -1,0 +1,11 @@
+.page-title {
+  text-transform: uppercase;
+  font-size: clamp(1.250rem, calc(0.614rem + 3.182vw), 3.000rem); /*20 - 48*/
+  line-height: .8;
+}
+.page-title > span {
+  display: block;
+}
+.page-title > span:nth-child(3) {
+  text-align: end;
+}

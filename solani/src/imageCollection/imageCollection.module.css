@@ -1,0 +1,20 @@
+#cards-track {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card-image {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card-image > img {
+  height: 40vh;
+  width: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+

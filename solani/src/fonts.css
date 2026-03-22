@@ -1,0 +1,11 @@
+@font-face{
+    font-family: "InstrumentSerif-Italic";
+    src:local("InstrumentSerif-Italic"),
+    url('./assets/fonts/InstrumentSerif-Italic.ttf') 
+}
+
+@font-face{
+    font-family: "InstrumentSerif-Regular";
+    src:local("InstrumentSerif-Regular"),
+    url('./assets/fonts/InstrumentSerif-Regular.ttf') 
+}

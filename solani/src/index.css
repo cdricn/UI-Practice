@@ -1,0 +1,39 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  color-scheme: light dark;
+  background: var(--color-dark);
+
+  --ff-InstrumentSerif-Regular: "InstrumentSerif-Regular";
+  --ff-InstrumentSerif-Italic: "InstrumentSerif-Italic";
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: var(--ff-InstrumentSerif-Regular);
+}
+
+img, picture, svg, video {
+  display: block;
+}
+
+main {
+}
