@@ -9,7 +9,7 @@
   -moz-osx-font-smoothing: grayscale;
   
   color-scheme: light dark;
-  background: var(--color-dark);
+  background: #000000;
 
   --ff-InstrumentSerif-Regular: "InstrumentSerif-Regular";
   --ff-InstrumentSerif-Italic: "InstrumentSerif-Italic";
@@ -35,5 +35,9 @@ img, picture, svg, video {
   display: block;
 }
 
-main {
+.debugPOS {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
 }

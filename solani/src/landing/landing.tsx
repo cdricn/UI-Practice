@@ -1,6 +1,7 @@
 import styles from './landing.module.css';
-import PageTitle from "../components/pagetitle";
+import PageTitle from "../components/textLogo";
 import ImageCollection from '../imageCollection/imageCollection';
+import ThemeSelector from '../components/themeSelector';
 
 export default function Landing() {
 
@@ -9,11 +10,7 @@ export default function Landing() {
       <div className={styles['content-container']}>
         <div className={styles['top-container']}>
           <PageTitle />
-          <div>
-            <span>Light</span>
-            <span>/</span>
-            <span>Dark</span>
-          </div>
+          <ThemeSelector />
         </div>
 
         <section className={styles['middle-container']}>
@@ -21,7 +18,7 @@ export default function Landing() {
         </section>
         
         <p className={styles['bottom-container']}>
-          Some text long <br/>
+          Some short text <br/>
           Based city
         </p>
       </div>      

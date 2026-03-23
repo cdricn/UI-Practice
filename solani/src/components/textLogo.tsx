@@ -1,6 +1,6 @@
-import styles from './pagetitle.module.css';
+import styles from './TextLogo.module.css';
 
-export default function PageTitle() {
+export default function TextLogo() {
   return (
     <h1 className={styles['page-title']}>
       <span>Header</span>

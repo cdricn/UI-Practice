@@ -2,19 +2,26 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 10px;
 }
 
 .card-image {
-  overflow: hidden;
   flex-shrink: 0;
+  border: 1px solid white;
 }
 
 .card-image > img {
+  filter: grayscale();
   height: 40vh;
   width: auto;
   object-fit: contain;
   object-position: center;
+  transition: .2s;
+}
+
+.card-image:hover > img {
+  filter: none;
+  transition: .2s;
 }
 
 

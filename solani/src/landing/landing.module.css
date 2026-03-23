@@ -15,6 +15,7 @@
 }
 
 .top-container {
+  padding: 0 max(10%, 10px) 0 max(10%, 10px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,10 +23,18 @@
 }
 
 .middle-container {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   position: relative;
+  overflow: hidden;
+  width: 95%;
 }
 
 .bottom-container {
+  padding: 0 max(10%, 10px) 0 max(10%, 10px);
 }
 
 @media (width > 500px) {

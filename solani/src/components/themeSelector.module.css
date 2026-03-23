@@ -1,0 +1,4 @@
+.selector-container > span {
+  text-transform: uppercase;
+  line-height: 100%;
+}
