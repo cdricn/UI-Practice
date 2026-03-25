@@ -16,8 +16,12 @@
 
   --fs-logo: 48px;
   --fs-h1: 64px;
+  --fs-h2: 48px;
   --fs-body: 18px;
   --fs-theme: 20px;
+
+  --color-lightgray: #868686;
+  --color-gray: #504f4f;
 }
 
 @media (width < 600px) {
@@ -25,7 +29,7 @@
     --fs-logo: 24px;
     --fs-h1: 36px;
     --fs-body: 14px;
-  --fs-theme: 16px;
+    --fs-theme: 16px;
   }
 }
 
@@ -41,7 +45,6 @@
 
 body {
   min-height: 100vh;
-  overflow: hidden;
   font-family: "InstrumentSerif-Regular";
   font-weight: 400;
   font-style: normal;

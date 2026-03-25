@@ -1,5 +1,4 @@
 import styles from './landing.module.css';
-import TextLogo from "../components/textLogo";
 import ImageCollection from '../imageCollection/imageCollection';
 import ThemeSelector from '../components/themeSelector';
 
