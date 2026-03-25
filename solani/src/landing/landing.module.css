@@ -20,7 +20,23 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: end;
+  gap: 40px;
 }
+
+.header {
+  display: block;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: var(--fs-h1); /*20 - 48*/
+  line-height: .8;
+}
+.header > span {
+  display: block;
+}
+.header > span:nth-child(3) {
+  text-align: end;
+}
+
 
 .middle-container {
   border-left: 1px solid white;
@@ -34,7 +50,8 @@
 }
 
 .bottom-container {
-  padding: 0 max(10%, 10px) 0 max(10%, 10px);
+  padding: 0 max(10%, 10px) 0 max(20%, 10px);
+  font-size: var(--fs-body);
 }
 
 @media (width > 500px) {

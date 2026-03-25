@@ -33,8 +33,7 @@ export default function Nav() {
             {navOptions.map((item)=>{
               return (
                 <li className={styles['option']}>
-                  <span></span>
-                  <a>{item}</a>
+                  <a href='/'>{item}</a>
                 </li>
               )})
             }

@@ -1,11 +1,11 @@
-import styles from './TextLogo.module.css';
+import styles from './textLogo.module.css';
 
 export default function TextLogo() {
   return (
-    <h1 className={styles['page-title']}>
+    <div className={styles['text-logo']}>
       <span>Header</span>
       <span>Middletitle</span>
       <span>Bottom</span>
-    </h1>
+    </div>
   )
 }

@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "InstrumentSerif-Regular", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   scroll-behavior: smooth;
 
@@ -13,6 +13,20 @@
 
   --ff-InstrumentSerif-Regular: "InstrumentSerif-Regular";
   --ff-InstrumentSerif-Italic: "InstrumentSerif-Italic";
+
+  --fs-logo: 48px;
+  --fs-h1: 64px;
+  --fs-body: 18px;
+  --fs-theme: 20px;
+}
+
+@media (width < 600px) {
+  :root {
+    --fs-logo: 24px;
+    --fs-h1: 36px;
+    --fs-body: 14px;
+  --fs-theme: 16px;
+  }
 }
 
 *, *::before, *::after {
@@ -28,7 +42,10 @@
 body {
   min-height: 100vh;
   overflow: hidden;
-  font-family: var(--ff-InstrumentSerif-Regular);
+  font-family: "InstrumentSerif-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
 }
 
 img, picture, svg, video {

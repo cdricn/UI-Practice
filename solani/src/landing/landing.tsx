@@ -1,5 +1,5 @@
 import styles from './landing.module.css';
-import PageTitle from "../components/textLogo";
+import TextLogo from "../components/textLogo";
 import ImageCollection from '../imageCollection/imageCollection';
 import ThemeSelector from '../components/themeSelector';
 
@@ -9,7 +9,11 @@ export default function Landing() {
     <main className={styles['wrapper']}>
       <div className={styles['content-container']}>
         <div className={styles['top-container']}>
-          <PageTitle />
+          <div className={styles['header']}>
+            <span>Header</span>
+            <span>Middletitle</span>
+            <span>Bottom</span>
+          </div>
           <ThemeSelector />
         </div>
 

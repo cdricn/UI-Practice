@@ -1,3 +1,4 @@
+import './fonts.css';
 import Landing from './landing/landing';
 import Nav from './components/nav';
 
