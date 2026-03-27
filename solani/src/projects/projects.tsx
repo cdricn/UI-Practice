@@ -1,9 +1,18 @@
+'use client';
+
 import Logo from '../components/logo';
 import Nav from '../components/nav';
 import { collection } from "../data/collection";
 import styles from './projects.module.css';
 
 export default function Projects() {
+
+  function hoverLeave(e:React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    const animStyle = e.currentTarget.children[0] as HTMLElement;
+    animStyle.style.clipPath = `
+      polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)
+    `;
+  }
 
   return (
     <>
@@ -26,26 +35,29 @@ export default function Projects() {
         </div>
       </div>
       <main className={styles['artworks-list']}>
+        
+        <div className={styles['artwork-wrapper']}>
           {collection.map((item, index)=>{
             return (
               <>
-                <div className={styles['artwork-image']}>
-                  <img src={item.src} />
-                </div>
-                <div className={styles['details-wrapper']}>
-                  <a className={styles['artwork-details']}>
+                <a href='/' 
+                  className={styles['artwork-details']} 
+                  onMouseLeave={(e)=>{hoverLeave(e)}}>
+                    <div className={styles['artwork-image']}>
+                      <img src={item.src} />
+                    </div>
                     <div className={styles['artwork-title']}>
-                      <span>{index}</span>
+                      <span>{index+1}</span>
                       <h2>
                         {item.name}
                       </h2>
                     </div>
                     <p>{item.type}</p>
-                  </a>
-                </div>
+                </a>
               </>
             )})
           }
+        </div>
       </main>
     </>
   )

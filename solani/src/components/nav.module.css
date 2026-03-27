@@ -43,7 +43,7 @@
 
 .logo-container {
   margin-top: 30px;
-  margin-left: clamp(5px, 5vh, 60px);
+  margin-left: clamp(5px, 3%, 1920px);
 }
 
 .nav-options {
